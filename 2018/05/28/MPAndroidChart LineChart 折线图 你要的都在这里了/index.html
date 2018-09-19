@@ -5,12 +5,12 @@
   
   <title>MPandroidChart LineChart 折线图 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。   最终效果图 ######涉及到的问题以及知识点  图表样式以及基础数据 （快速入门） x轴标签自定义标签（Formatting Data Values (ValueFormatte">
+  <meta name="description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MPandroidChart LineChart 折线图">
 <meta property="og:url" content="https://laishujie.github.io/2018/05/28/MPAndroidChart LineChart 折线图 你要的都在这里了/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。   最终效果图 ######涉及到的问题以及知识点  图表样式以及基础数据 （快速入门） x轴标签自定义标签（Formatting Data Values (ValueFormatte">
+<meta property="og:description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://img-blog.csdn.net/20180501141525118?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180528214357228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
@@ -22,10 +22,10 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20180527200351591?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180528212535998?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180528214540113?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-09-16T05:55:12.287Z">
+<meta property="og:updated_time" content="2018-09-19T14:24:47.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MPandroidChart LineChart 折线图">
-<meta name="twitter:description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。   最终效果图 ######涉及到的问题以及知识点  图表样式以及基础数据 （快速入门） x轴标签自定义标签（Formatting Data Values (ValueFormatte">
+<meta name="twitter:description" content="前言 &amp;emsp;&amp;emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20180501141525118?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -68,6 +68,7 @@
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>&emsp;&emsp;MPAndroidChart已经出了很长的一段时间，相信大家也有所耳闻，自己也使用了有一段时间，固在此写下文章，根据项目的需求，记录一些见解与问题，作为参考。望大家取其精华去其糟粕。</p>
 </blockquote>
+<a id="more"></a>
 <hr>
 <h2 id="最终效果图"><a href="#最终效果图" class="headerlink" title="最终效果图"></a>最终效果图</h2><p><img src="https://img-blog.csdn.net/20180528214357228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E4Njg4NTU1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
 <p>######涉及到的问题以及知识点</p>
@@ -166,15 +167,6 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/09/09/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
   
     <a href="/2017/08/08/Android常见的上滑渐变显示标题栏/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
@@ -199,7 +191,7 @@
 			<li><a href="/tags"><i class="icon icon-tag"></i></a></li>
   		
   		
-  			<li><a href="https://github.com/hejianxian" target="_blank"><i class="icon icon-github"></i></a></li>
+  			<li><a href="https://github.com/laishujie" target="_blank"><i class="icon icon-github"></i></a></li>
   		
   	</ul>
   </nav>
@@ -225,7 +217,7 @@
   
     <a href="/tags" class="mobile-nav-link">Tag</a>
   
-    <a href="https://github.com/hejianxian" class="mobile-nav-link">Github</a>
+    <a href="https://github.com/laishujie" class="mobile-nav-link">Github</a>
   
 </nav>
     
