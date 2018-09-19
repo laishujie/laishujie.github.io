@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android常见的上滑渐变显示标题栏 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言*    ~(￣0￣)/， 最近发现很多的APP都有标题渐变的效果，于是就想着写一篇文章记录记录。废话少说，直接上动图 ，看看市面上常见的上滑渐变的标题栏。   小米商场和淘宝电影 分析    相信大家也有过这种需求.其实这很简单。我们可以通过这个  控件.setAlpha(percent);方法去达到上图的效果。    参数范围是 0~1 还有个方法是 setBackgroundColor">
+<meta name="keywords" content="android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android常见的上滑渐变显示标题栏">
+<meta property="og:url" content="https://laishujie.github.io/2017/08/08/Android常见的上滑渐变显示标题栏/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言*    ~(￣0￣)/， 最近发现很多的APP都有标题渐变的效果，于是就想着写一篇文章记录记录。废话少说，直接上动图 ，看看市面上常见的上滑渐变的标题栏。   小米商场和淘宝电影 分析    相信大家也有过这种需求.其实这很简单。我们可以通过这个  控件.setAlpha(percent);方法去达到上图的效果。    参数范围是 0~1 还有个方法是 setBackgroundColor">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdn.net/20170808135449206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="https://img-blog.csdn.net/20170808142552585?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="https://img-blog.csdn.net/20170808142913990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="https://img-blog.csdn.net/20180103152454515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="https://img-blog.csdn.net/20180103152528239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-09-18T15:06:06.885Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android常见的上滑渐变显示标题栏">
+<meta name="twitter:description" content="前言*    ~(￣0￣)/， 最近发现很多的APP都有标题渐变的效果，于是就想着写一篇文章记录记录。废话少说，直接上动图 ，看看市面上常见的上滑渐变的标题栏。   小米商场和淘宝电影 分析    相信大家也有过这种需求.其实这很简单。我们可以通过这个  控件.setAlpha(percent);方法去达到上图的效果。    参数范围是 0~1 还有个方法是 setBackgroundColor">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20170808135449206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <section id="main"><article id="post-Android常见的上滑渐变显示标题栏" class="article article-type-post" itemscope itemprop="blogPost">
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android常见的上滑渐变显示标题栏
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2017/08/08/Android常见的上滑渐变显示标题栏/" class="article-date">
+  <time datetime="2017-08-08T06:25:22.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!--
+ ![这里写图片描述](https://img-blog.csdn.net/20170808135449206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+-->
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言*"></a>前言*</h3><blockquote>
+<p>   ~(￣0￣)/， 最近发现很多的APP都有标题渐变的效果，于是就想着写一篇文章记录记录。<br>废话少说，直接上动图 ，看看市面上常见的上滑渐变的标题栏。</p>
+</blockquote>
+<p><img src="https://img-blog.csdn.net/20170808135449206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<h3 id="小米商场和淘宝电影"><a href="#小米商场和淘宝电影" class="headerlink" title="小米商场和淘宝电影"></a>小米商场和淘宝电影</h3><p><img src="https://img-blog.csdn.net/20170808142552585?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="小米商场"><img src="https://img-blog.csdn.net/20170808142913990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="淘宝电影"></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><hr>
+<p>   相信大家也有过这种需求.其实这很简单。我们可以通过这个 </p>
+<p><strong>控件.setAlpha(percent);</strong>方法去达到上图的效果。</p>
+<p>   参数范围是 0~1</p>
+<p>还有个方法是</p>
+<p><strong>setBackgroundColor(Color.argb( alpha, red, green, bule));</strong></p>
+<p>参数也很简单 </p>
+<p>alpha 透明度 0~255</p>
+<p>其他的值就是RGB值。如果不知道直接的RGB值怎么拿。可以通过一些小工具获取</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://img-blog.csdn.net/20180103152454515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></h2><h3 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h3><p><img src="https://img-blog.csdn.net/20180103152528239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTg2ODg1NTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>可以通过上图查看其值的变化。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>无论怎样其中的思想就是监听滑动。然后通过api去改变其透明度。</p>
+<p><strong>setBackgroundColor(Color.argb(alpha,red,green,bule));</strong></p>
+<p><strong>setAlpha(percent);</strong></p>
+<p>两者之间选择api一个使用即可。</p>
+<p>接下来靠大家自己去实践才会更清楚哦。正所谓 如马克思所说： <strong>实践才是检验真理的唯一标准</strong>。啧啧。【完】</p>
+<p><a href="https://github.com/laishujie/SlideDemo" target="_blank" rel="noopener">Demo</a></p>
+
+      
+
+      
+        
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/05/28/MPAndroidChart LineChart 折线图 你要的都在这里了/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          MPandroidChart LineChart 折线图
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside id="sidebar">
+  <nav class="menus">
+  	<ul>
+  		<li><a href="/"><i class="icon icon-home"></i></a></li>
+  		
+			<li><a href="/archives"><i class="icon icon-fenlei"></i></a></li>
+  		
+  		
+			<li><a href="/tags"><i class="icon icon-tag"></i></a></li>
+  		
+  		
+  			<li><a href="https://github.com/hejianxian" target="_blank"><i class="icon icon-github"></i></a></li>
+  		
+  	</ul>
+  </nav>
+  <a id="go-top" href="#"><i class="icon icon-up"></i></a>
+</aside>
+
+      </div>
+      <footer id="footer">
+  
+	<div id="footer-info" class="inner">
+	  &copy; 2018 laishujie 
+	  - Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	  - Theme <a href="https://github.com/hejianxian/hexo-theme-jane/" target="_blank">Jane</a>
+	</div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tag</a>
+  
+    <a href="https://github.com/hejianxian" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
